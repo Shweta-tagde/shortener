@@ -5,11 +5,7 @@ import Image from "next/image"
     return (
         <>
         <Container>
-            <div>
-                <h1>MORE THAN JUST<b />
-                SHORTER LINK</h1>
-                <p>Build your Brand recognition and get detailed</p>
-            </div>
+            
           
         </Container>
 

@@ -1,6 +1,7 @@
 import { Containerdiv} from "../style/featurestyle"
 import Figure from "./Figure"
 import Form from "./Form"
+// import Form2 from "./form2"
 
 
 
@@ -16,7 +17,7 @@ export default function Features({state}) {
         <div><h2>Advance statics</h2>
            <p>"Track how your link are performing across the web",<br/>
            "our advance statics board."</p></div>  
-           <div class = "griddiv">
+           <div className = "griddiv">
              <div className ="inner">  
               <Figure/>
                  <h3>Brand Recognition</h3>

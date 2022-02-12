@@ -3,10 +3,19 @@ import styled from "styled-components";
 export const Container = styled.div`
 width:100%;
 height:auto;
-//  background:no-repeat 50% url('./images.jpg');
+  background:no-repeat 50% url('/img/people working.svg');
+  background-size:contain;
+// background-image:url("/images/bg-shorten-desktop.svg");
 //   margin-botton:10rem;
 display:flex;
 flex-direction:column;
+// margin-top: 9rem;
+     height: 21rem;
+}
+@media (max-width:(380px)){
+
+    width:48rem;
+}
 
 
 div{
@@ -15,7 +24,7 @@ div{
     paddin-right:0;
 }
  h1{
-    font-size: 3rem;
+    font-size: 21px;
     font-weight: 700;
     line-height: 1.1;
     color:black;

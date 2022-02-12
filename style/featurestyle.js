@@ -1,38 +1,86 @@
 import styled from 'styled-components'
-
+import { mediaQry } from '../components/Media';
 
  export const Containerdiv =styled.div`
  
  display:flex;
  flex-direction:column;
+background-color:#E6EDf5;
+
+
+//  background:url('/img/logo.svg');
+
  
-//  background:url('');
  
 
- & .griddiv {
+ & .griddiv{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3.5rem;
     opacity:1;
     margin-bottom: 88px;
     margin-top: 6rem;
+    margin-right: 15px;
+    margin-left: 15px;
+    height: 11rem;
+
+
+    @media(max-width:376px){
+      grid-template-columns:1fr;
+      height: 26rem;
     
-}
+    }
+    
+  }
+
 
 &  .inner{
-  border: 2px solid grey;
+   background:white;
   border-radius: 11px;
-}
-
-
-
+  // }@media(max-width:376px){
+  //   width: 36rem;
+  //   margin-left: 7rem;
+  //   height: 13rem;
+  // }
   }
+ }
 
   & .griddiv p{
     color: #bfbfbf;
     font-size: 1.6rem;
     text-align:"center";
-  }
+  
+}
+
+  
+// p {
+
+// ${mediaQry.greaterThan("43.8125em")`
+//         :not(:first-child)::after {
+//       content:"hello";
+//       position:absolute;
+//       top:50%;
+//       right:100%;
+//       height:5px;
+//       width:3.5rem;
+//       background-color:blue;
+//        }
+
+//        ${mediaQry.lessThan("tablet-small")`
+//        :not(:last-child)::after {
+//          content:"hello";
+//          position:absolute;
+//          top:100%;
+//          right:50%;
+//          height:3.5rem;
+//          width:5px;
+//              background-color:blue;
+//              }
+//              text-align:center;
+               
+//        `}
+ 
+// `}
 
 //   @media (min-width: 43.8125em)
 
@@ -63,11 +111,17 @@ import styled from 'styled-components'
 h3{
   text-align:center;
 }
+
 p{
   text-align:center;
   color: #bfbfbf;
   font-size: 1.6rem;
 }
+  @media (max-width(375px)){
+    padding: 10rem 2rem 20rem;
+    width: fit-content;
+}
+  
 
  `;
 

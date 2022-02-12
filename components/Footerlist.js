@@ -1,8 +1,8 @@
- import  {focontainer } from '../style/footerliststyle'
+ import  {Focontainer } from '../style/footerliststyle'
 import Link from 'next/link'
 export default function Footerlist() {
     return (
-        <focontainer>
+        <Focontainer>
         <ul>
             <h3>Features</h3>
             <li><Link href="/"><a>Link Shortening</a></Link></li>
@@ -21,6 +21,6 @@ export default function Footerlist() {
             <li><Link href="/"><a>Careers</a></Link></li>
             <li><Link href="/"><a>Contact</a></Link></li>
         </ul>
-    </focontainer>
+    </Focontainer>
     )
 }

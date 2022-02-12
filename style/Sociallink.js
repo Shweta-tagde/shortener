@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import social from '../style/socialstyle'
+import {Social} from './socialstyle'
 export default function Sociallink() {
     return (
-        <social>
+        <Social>
                 <Link href="#">
                     <a>facebook</a>
                 </Link>
@@ -15,6 +15,6 @@ export default function Sociallink() {
                 <Link href="#">
                     <a> twitter</a>
                 </Link>
-            </social>
+            </Social>
     )
 }
