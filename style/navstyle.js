@@ -1,6 +1,7 @@
 import styled from 'styled-components' 
  export const Containerdiv =styled.div`
- margin-top:3px;
+//  margin-top:3px;
+ margin-top: 2rem;
  height:50px;
  position:sticky;
 background-color:white;
@@ -25,7 +26,17 @@ a:-webkit-any-link {
     margin-right: 23px;
     color:black;
 }
-
+ 
+.hanburger{
+    
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-left: 44rem;
+    display:none;
+    @media(max-width:375px){
+        display:block;
+    }
+}
 
 
 `;
@@ -41,29 +52,16 @@ color:lightgrey;
     color: darkgrey;
     font-weight: bold;
 
- & .line{
-     display:none;
- }  
-}
-    @media(max-width:375px){
-        .navstyle{
+    @media(max-width:376px){
+        {
             display:none;
         }
+ 
+}
+    
     }
 
-    .hanburger{
-        display:flex;
-        flex-direction:column;
-        width:25px;
-        height:20px;
-        curser:pointer;
-    }
-    .line{
-     width:100%
-     height:3px;
-     background-color:white;
-
-    }
+    
 `;
 
 // export const no =  styled(Container)``;

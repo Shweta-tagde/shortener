@@ -5,6 +5,12 @@ import styled from 'styled-components'
     background: #2ACFCF;
     /* border-style: solid; */
     border-radius: 12px;
-    height: 39px
-  
+    height: 39px;
+   
+    &:active{
+      background-color:black;
+      color:white;
+    }
+
+   
   `;

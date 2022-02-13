@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { mediaQry } from '../components/Media';
+// import { mediaQry } from '../components/Media';
 
  export const Containerdiv =styled.div`
  
@@ -8,12 +8,7 @@ import { mediaQry } from '../components/Media';
 background-color:#E6EDf5;
 
 
-//  background:url('/img/logo.svg');
-
- 
- 
-
- & .griddiv{
+& .griddiv{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3.5rem;
@@ -27,7 +22,10 @@ background-color:#E6EDf5;
 
     @media(max-width:376px){
       grid-template-columns:1fr;
-      height: 26rem;
+      width: 41rem;
+    height: 42rem;
+    margin-left: 9rem;
+    margin-top: 2rem;
     
     }
     
@@ -37,13 +35,14 @@ background-color:#E6EDf5;
 &  .inner{
    background:white;
   border-radius: 11px;
-  // }@media(max-width:376px){
-  //   width: 36rem;
-  //   margin-left: 7rem;
-  //   height: 13rem;
-  // }
+  @media(max-width:376px){
+    // width: 36rem;
+    // margin-left: 7rem;
+    height: 12rem;
+    padding: 13px;
   }
- }
+  
+  }
 
   & .griddiv p{
     color: #bfbfbf;

@@ -5,35 +5,97 @@ import { Button } from '../style/copybuttonstyle'
 
 export default function Copyelement({data}) {
 const [state, setstate] = useState("copy")
-
 const word = state
+const d1 = data[0]
 console.log(data)
-console.log(d2)
-console.log(data)
- return (
-        // data.foreach((element)=>{  
-        // <span>
-        //     <CopyToClipboard text ={element[0]} >
+return (
+<span>
+{
+data.map((Element)=>{
+let  a = Element[0];
+console.log(a)
+       return (  
+      <CopyToClipboard  text={a} >
             
-        //      <div onClick= {()=>{setstate("copied")  }}> 
-        //       {word} 
-        //      </div>  
-        //      </CopyToClipboard>
-        //     </span>   })
-        data.map((Element, index)=>{
-            <span key={index} >
+       <Button onClick= {()=>{setstate("copied")  }}> 
+        {word} 
+       </Button>
+       
+       </CopyToClipboard> 
+       
+       
+       )
+
+    })
+
+
+    }
+ </span>
+ 
+
+)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* {/* 
+        <CopyToClipboard text ={d1} >
+            
+             <Button onClick= {()=>{setstate("copied")  }}> 
+              {word} 
+             </Button>  
+             </CopyToClipboard>
+            </span>  */}
+
+            {/* /*  */}
+         {/* data.map((Element, index)=>{
+             <span key={index} >
         
-        <CopyToClipboard text ={Element[0]} >
-         <Button onClick= {()=>{setstate("copied") }}> 
-          {word} 
-          </Button>  
+         <CopyToClipboard text ={Element[0]} >
+          <Button onClick= {()=>{setstate("copied") }}> 
+          <button type="button"> 
+           {word} 
+          </button>  
          
         
             
         </CopyToClipboard>
-        </span>
+     </span> 
 
-        })
+         })
         
-    )
-}
+    ) */}
+{/* }  */}
+
+
+
+
+
+
+
+
+
+
+
+
+

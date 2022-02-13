@@ -1,5 +1,7 @@
  import  {Focontainer } from '../style/footerliststyle'
+ import { FooterWrap } from '../style/footerstyle'
 import Link from 'next/link'
+import Image from 'next/image'
 export default function Footerlist() {
     return (
         <Focontainer>
@@ -11,16 +13,34 @@ export default function Footerlist() {
         </ul>
         <ul>
             <h3>Resources</h3>
-            <li><Link href="/"><a>Blog</a></Link></li>
-            <li><Link href="/"><a>Developers</a></Link></li>
-            <li><Link href="/"><a>Support</a></Link></li>
+            <li className="two"><Link href="/"><a>Blog</a></Link></li>
+            <li className="two"><Link href="/"><a>Developers</a></Link></li>
+            <li className="two"><Link href="/"><a>Support</a></Link></li>
         </ul>
-        <ul>
+        <ul className="about">
             <h3>About</h3>
-            <li><Link href="/"><a>Out Team</a></Link></li>
-            <li><Link href="/"><a>Careers</a></Link></li>
-            <li><Link href="/"><a>Contact</a></Link></li>
+            <li className="three"><Link href="/"><a>Out Team</a></Link></li>
+            <li className="three"><Link href="/"><a>Careers</a></Link></li>
+            <li className="three"><Link href="/"><a>Contact</a></Link></li>
         </ul>
+
+
+       <div className='endlogo'>
+         <span className="space"> <Image src={'/img/icon-facebook2.svg'} width='50px' height='50px'/>  </span>
+        <span className="space"><Image src={'/img/icon-pinterest2.svg'} width='50px' height='50px'/> </span>
+         <span className="space"> <Image src={'/img/icon-twitter2.svg'} width='50px' height='50px'/> </span>
+      <span className="space"> <Image src={'/img/icon-instagram2.svg'} width='50px' height='50px'/>  </span>
+    </div>
+
+
+
+
+
+
+
+
+
+
     </Focontainer>
     )
 }

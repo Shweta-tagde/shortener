@@ -17,13 +17,12 @@ height: 1rem;
 //  margin-top:-2rem;
 border-radius:10px;
 
-@media(max-width:375px){
-      // margin-left: 6rem;
-      // margin-top: -2rem ; 
+@media(max-width:376px){
       height:15rem;
       width: 39rem;
-    margin-left: 8rem;
-    margin-top: -3rem
+    margin-left: 10rem;
+    margin-top: -3rem;
+//     justify-content: space-evenly;
 
       
 }
@@ -40,13 +39,19 @@ input{
       margin-right:1.5rem;
       cursor:pointer;
       width:40rem;
-      @media(max-width:376px){
-           
-            margin-left:22rem;
-           margin-top: 4rem;
 
-      
-      }
+      @media(max-width:376px){
+
+    
+
+    margin-top: 0rem;
+    margin-bottom: 19px
+    width: 45%;
+    margin-left: 22rem;
+    float: right;
+    margin-right: 21rem
+
+     }
 
       @media (max-width:1440px){
          width:34rem;
@@ -55,14 +60,7 @@ input{
           }
           
  }
-  @media (max-width:376px){
-      // margin-top: 0rem;
-      // margin-left:0rem;
-      margin-left: 6rem;
-        width: 41rem;
-       height: 15rem;
-
-}
+ 
 
 
 button{
@@ -77,11 +75,17 @@ button{
       outline: none;
       font-weight: 700;
       transition: brightness 0.2s ease 0s;
+
+      :active{
+        background:black;
+        color:white;
+      }
       
       @media(max-width:376px){
-            margin-left:5rem;
              width: 34rem;
              margin-right:21rem;
+                  margin-left: 22rem;
+                  margin-top: 3rem;
       }
       @media(max-width:1283px){
         margin-left:23rem;
@@ -89,8 +93,13 @@ button{
       }
      
 } 
+ place{
+   color:red;
+ }
+    
+ 
 
-     
+ 
 
 // 
         }

@@ -16,6 +16,11 @@ div{
     line-height: 1.1;
     color:black;
     text-align:center;
+    @media(max-width:376px)
+    {
+    margin-left: 1rem;
+    margin-top: 3rem;
+    }
     
 }
 span {
@@ -31,13 +36,7 @@ button{
     padding:20px
 }
 
-@media (max-width:380px){
-h1{
-    margin-top: 7rem;
-    text-align: center;
-    margin-left: 7rem;
-    width: max-content;
-}
+
 
 }
 `;

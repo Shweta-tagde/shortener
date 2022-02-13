@@ -21,8 +21,9 @@ export default function Home() {
         <meta name="description" content="created url shortener easy to use" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <link rel="icon" href="/favicon.ico" />
-        
-      </Head>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+       </Head>
+
       <Navbar/>
      <Enclosediv> 
       
@@ -32,6 +33,8 @@ export default function Home() {
     <Footer/>
      
     </Enclosediv>
+    
+
   </div>
   )
 }

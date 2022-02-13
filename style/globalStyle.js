@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Poppins', sans-serif;
 }`;
 
-const color = createGlobalStyle`
+const Color = createGlobalStyle`
 color{
 --neutral-Gray: 	#bfbfbf;
  --neutral-Grayish-Violet: #9e9aa7;
