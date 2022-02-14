@@ -13,7 +13,7 @@ return (
         <List className ="navlist"><Link href="/products/production">RESOURCES</Link></List>
         </ul>
          <div className="hanburger">
-         <i class="fas fa-bars"></i>
+         <i className="fas fa-bars"></i>
 
 
          </div>

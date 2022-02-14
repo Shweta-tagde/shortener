@@ -46,7 +46,7 @@ background-color:#E6EDf5;
 
   & .griddiv p{
     color: #bfbfbf;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-align:"center";
   
 }
